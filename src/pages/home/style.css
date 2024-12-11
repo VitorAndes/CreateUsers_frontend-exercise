@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  flex-direction: column;
+  width: 900px;
+}
+
+.container_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  max-width: 50%;
+  width: 400px;
+  margin-bottom: 20px;
+
+  background: rgba(158, 134, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  & .form_title {
+    color: #ffff;
+    font-size: 20px;
+  }
+
+  & .form_input {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    outline: none;
+  }
+
+  & .form_button {
+    border-radius: 30px;
+    background-color: rgba(158, 134, 255);
+    height: 40px;
+    border: none;
+    box-shadow: 1px 2px 2px 2px black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.container_users {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & .user_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(158, 134, 255);
+    box-shadow: 0px 7px 1px 0px rgba(00, 00, 00);
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+
+    & .user_card__infos {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      & .card_infos {
+        font-size: 18px;
+        font-weight: bold;
+
+        & span {
+          font-size: 16px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  & .button_delete {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
